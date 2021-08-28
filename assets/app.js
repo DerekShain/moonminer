@@ -3,6 +3,7 @@ var multiplier = 1;
 var aMultiplier = 0;
 var collectionInterval = 0;
 
+// Dictionary
 var clickUpgrades = {
     pickaxe:{
         price: 10,
@@ -29,17 +30,15 @@ var automaticUpgrades = {
     }
 }
 
+// Mining Functions
 function mine(){
     if (multiplier > 1) {
         cheese += 1 * Math.round(multiplier);
     } else {
         Math.round(cheese += 1);
     }
-
     document.getElementById('cUpdate').innerText = cheese.toString();
-    
 }
-
 function autoMine(){
     if(aMultiplier > 1){
         cheese += 1 * Math.round(aMultiplier);
@@ -47,6 +46,7 @@ function autoMine(){
     document.getElementById('cUpdate').innerText = cheese.toString();
 }
 
+// Purchase Functions
 function buyPickaxe(){
     if(cheese >= clickUpgrades.pickaxe.price){
         multiplier += clickUpgrades.pickaxe.multiplier;
@@ -58,7 +58,6 @@ function buyPickaxe(){
         document.getElementById("paCount").innerText = clickUpgrades.pickaxe.price.toString();
     }
 }
-
 function buySpoons(){
     if(cheese >= clickUpgrades.spoons.price){
         multiplier += clickUpgrades.spoons.multiplier;
@@ -70,8 +69,6 @@ function buySpoons(){
         document.getElementById("spCount").innerText = clickUpgrades.spoons.price.toString();
     }
 }
-
-
 function buyRovers(){
     if(cheese >= automaticUpgrades.rovers.price){
         aMultiplier += automaticUpgrades.rovers.multiplier;
@@ -95,6 +92,7 @@ function buyRobots(){
     }
 }
 
+// Timer
 function timer(type) {
     if (type === 'rovers') {
         clearInterval(collectionInterval);
@@ -105,7 +103,6 @@ function timer(type) {
     } 
     startInterval();
 }
-
 function startInterval() {
     collectionInterval = setInterval(autoMine, 3000);
   }
