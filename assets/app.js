@@ -8,12 +8,12 @@ var clickUpgrades = {
     pickaxe:{
         price: 10,
         quantity: 0,
-        multiplier: 1
+        multiplier: 2
     },
     spoons:{
         price: 20,
         quantity: 0,
-        multiplier: 2
+        multiplier: 5
     }
 };
 
@@ -21,12 +21,12 @@ var automaticUpgrades = {
     rovers:{
         price: 50,
         quantity: 0,
-        multiplier: 10,
+        multiplier: 20,
     },
     robots:{
         price: 100,
         quantity: 0,
-        multiplier: 20,
+        multiplier: 40,
     }
 }
 
