@@ -5,3 +5,8 @@
 .custom-font{
     font-family: 'Kanit', sans-serif;
 }
+
+.pic-center{
+    display: flex;
+    justify-content: center;
+}

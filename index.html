@@ -18,6 +18,7 @@
     <div class="container">
         <div class="row text-center text-light">
           <h1>Moon Miner</h1>
+          <p>Click the moon to mine for the cheese.</p>
         </div>
      </div>
   </header>
@@ -27,8 +28,8 @@
       <div class="row">
         <div class="col-md-4 col-sm-12 card bg-dark">
           <h1>Stats</h1>
-          <p>Auto Cheese Multiplier:<span id="acMultiplier">0</span></p>
-          <p>Clicky Multiplier:<span id="cMultiplier">1</span></p>
+          <p>Auto Cheese Multiplier: <span id="acMultiplier">0</span></p>
+          <p>Clicky Multiplier: <span id="cMultiplier">1</span></p>
         </div>
 
       </div>
@@ -36,24 +37,24 @@
         <div class="col-md-4 col-sm-12 card bg-dark">
           <h2>Inventory</h2>
           <p>
-            Cheese: <span id="cUpdate">0</span>
+            Cheese: <span id="cUpdate"> 0</span>
           </p>
-          <p>PickAxe: <span id="paUpdate">0</span></p>
-          <p>Spoons: <span id="spUpdate">0</span></p>
-          <p>Rovers: <span id="roUpdate">0</span></p>
-          <p>Robots: <span id="rbUpdate">0</span></p>
+          <p>PickAxe: <span id="paUpdate"> 0</span></p>
+          <p>Spoons: <span id="spUpdate"> 0</span></p>
+          <p>Rovers: <span id="roUpdate"> 0</span></p>
+          <p>Robots: <span id="rbUpdate"> 0</span></p>
         </div>
-        <div class="col align-center">
+        <div class="col align-center pic-center">
           <img class="cheese" src="./assets/images/moon.gif"  onclick="mine()" alt="">
         </div>
       </div>
       <div class="row">
         <div class="col-md-4 col-sm-12 card bg-dark">
           <h2>Store</h2>
-            <p>PickAxe: <button type="button" class="btn btn-light" id="pickaxeBtn" onclick="buyPickaxe()">Purchase</button>$ <span id="paCount">10</span></p>
-            <p>Spoons: <button type="button" class="btn btn-light" id="spoonBtn" onclick="buySpoons()">Purchase</button> $<span id="spCount">20</span></p>
-            <p>Rovers: <button type="button" class="btn btn-light" onclick="timer('rovers')">Purchase</button> $<span id="roCount">50</span></p>
-            <p>Robots: <button type="button" class="btn btn-light" onclick="timer('robots')">Purchase</button> $<span id="rbCount">100</span></p>
+            <p>PickAxe: <button type="button" class="btn btn-light" id="pickaxeBtn" onclick="buyPickaxe()">Purchase</button> C$<span id="paCount">10</span></p>
+            <p>Spoons: <button type="button" class="btn btn-light" id="spoonBtn" onclick="buySpoons()">Purchase</button> C$<span id="spCount">20</span></p>
+            <p>Rovers: <button type="button" class="btn btn-light" onclick="timer('rovers')">Purchase</button> C$<span id="roCount">50</span></p>
+            <p>Robots: <button type="button" class="btn btn-light" onclick="timer('robots')">Purchase</button> C$<span id="rbCount">100</span></p>
         </div>
      
         </div>
@@ -61,10 +62,8 @@
     </div>
   </main>
 
-<footer>
-  <audio controls autoplay="autoplay" loop>
-    <source src="./assets/deepspace.mp3" type="audio/ogg"> 
-  </audio>
+<footer class="container-fluid">
+  
 </footer>
 
     <script src="./assets/app.js"></script>
